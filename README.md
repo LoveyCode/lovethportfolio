@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +35,41 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# lovethportfolio
+
+# 💼 Personal Portfolio - Loveth Azodo
+
+This is my personal developer portfolio website, built to showcase my skills, projects, and experience as a web developer and designer. The portfolio is fully responsive and includes sections like an about page, featured projects, contact info, and more.
+
+## 🌐 Live Demo
+
+👉 [View Portfolio]()  
+
+
+---
+
+## 📌 Features
+
+- Responsive and modern UI
+- Interactive project showcase
+- About me & skills section
+- Social media integration
+- Contact section
+- Optimized for performance and accessibility
+
+---
+
+## 🛠️ Built With
+
+- **React.js / Next.js**
+- **Tailwind CSS**
+- **Framer Motion** (for animations)
+- **Appwrite / Firebase** (if applicable)
+- **Git & GitHub** for version control and deployment
+
+---
+
+## 📂 Folder Structure
+
+>>>>>>> 6595f0302af30a57a2429b723413f32a042eb8b6
