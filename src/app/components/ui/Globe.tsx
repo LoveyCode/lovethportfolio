@@ -240,6 +240,7 @@ useEffect(() => {
     return () => clearInterval(interval);
   }, [globeData, data.length]);
 
+  
   return <primitive object={globeRef.current} />;
 };
 
