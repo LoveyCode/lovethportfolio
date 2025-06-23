@@ -1,5 +1,5 @@
 "use client";
-import React, { ReactNode, ComponentType, RefObject, useRef } from "react";
+import React, { ReactNode, ComponentType, useRef } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -17,7 +17,7 @@ type CustomProps = {
 type ButtonProps = {
   borderRadius?: string;
   children: ReactNode;
-  as?: ComponentType<any> | string;
+  as?: ComponentType<React.HTMLAttributes<HTMLElement>> | keyof JSX.IntrinsicElements;
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
@@ -27,22 +27,63 @@ type ButtonProps = {
 export function Button({
   borderRadius = "1.75rem",
   children,
-  as: Component = "button",
+  as,
   containerClassName,
   borderClassName,
   duration,
   className,
   ...otherProps
 }: ButtonProps) {
-  return (
+  const Component = as ?? "button";
+
+  const isStringTag = typeof Component === "string";
+
+  return isStringTag ? (
+    React.createElement(
+      Component,
+      {
+        className: cn(
+          "bg-transparent relative text-xl p-[1px] overflow-hidden md:col-span-2 md:row-span-1",
+          containerClassName
+        ),
+        style: { borderRadius },
+        ...otherProps,
+      },
+      <>
+        <div
+          className="absolute inset-0 rounde-[1.75rem]"
+          style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
+        >
+          <MovingBorder duration={duration} rx="30%" ry="30%">
+            <div
+              className={cn(
+                "h-20 w-20 opacity-[0.8] bg-[radial-gradient(#CBACF9_40%,transparent_60%)]",
+                borderClassName
+              )}
+            />
+          </MovingBorder>
+        </div>
+
+        <div
+          className={cn(
+            "relative bg-slate-900/[0.] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
+            className
+          )}
+          style={{
+            borderRadius: `calc(${borderRadius} * 0.96)`,
+          }}
+        >
+          {children}
+        </div>
+      </>
+    )
+  ) : (
     <Component
       className={cn(
         "bg-transparent relative text-xl p-[1px] overflow-hidden md:col-span-2 md:row-span-1",
         containerClassName
       )}
-      style={{
-        borderRadius: borderRadius,
-      }}
+      style={{ borderRadius }}
       {...otherProps}
     >
       <div
@@ -73,6 +114,7 @@ export function Button({
     </Component>
   );
 }
+
 
 type MovingBorderProps = {
   children: ReactNode;

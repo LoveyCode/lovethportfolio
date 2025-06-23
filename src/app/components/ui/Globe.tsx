@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { Color, Scene, Fog, PerspectiveCamera, Vector3, Mesh, Material } from "three";
+import { Color, Scene, Fog, PerspectiveCamera, Vector3,  } from "three";
 import ThreeGlobe from "three-globe";
 import { useThree, Canvas, extend } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
@@ -171,7 +171,7 @@ const globeRef = useRef(new ThreeGlobe());
     }
   }, [globeData, defaultProps]);
 
- const startAnimation = () => {
+ const startAnimation = useCallback(() => {
   if (!globeRef.current || !globeData) return;
 
   globeRef.current
@@ -203,33 +203,47 @@ const globeRef = useRef(new ThreeGlobe());
     .ringRepeatPeriod(
       (defaultProps.arcTime * defaultProps.arcLength) / defaultProps.rings
     );
-};
+}, [globeData, data, defaultProps]);
 
 
-  useEffect(() => {
+useEffect(() => {
+  if (globeRef.current && globeData) {
+    globeRef.current
+      .hexPolygonsData(countries.features)
+      .hexPolygonResolution(3)
+      .hexPolygonMargin(0.7)
+      .showAtmosphere(defaultProps.showAtmosphere)
+      .atmosphereColor(defaultProps.atmosphereColor)
+      .atmosphereAltitude(defaultProps.atmosphereAltitude)
+      .hexPolygonColor(() => defaultProps.polygonColor);
+
+    startAnimation(); // now safe
+  }
+}, [globeData, defaultProps, startAnimation]);
+
+
+     useEffect(() => {
     if (!globeRef.current || !globeData) return;
 
     const interval = setInterval(() => {
-      if (!globeRef.current || !globeData) return;
       numbersOfRings = genRandomNumbers(
         0,
         data.length,
         Math.floor((data.length * 4) / 5)
       );
 
-      globeRef.current.ringsData(
+      globeRef.current!.ringsData(
         globeData.filter((_, i) => numbersOfRings.includes(i))
       );
     }, 2000);
 
-    return () => {
-      clearInterval(interval);
-    };
+    return () => clearInterval(interval);
   }, [globeData, data.length]);
 
-return <primitive object={globeRef.current} />;
+  return <primitive object={globeRef.current} />;
+};
 
-}
+
 
 export function WebGLRendererConfig() {
   const { gl, size } = useThree();
