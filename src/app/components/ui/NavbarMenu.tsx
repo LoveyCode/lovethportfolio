@@ -1,8 +1,15 @@
 "use client";
-import React from "react";
+import React, { AnchorHTMLAttributes, ReactNode } from "react";
 import { motion } from "motion/react";
-import Link from "next/link";
+import Link, { LinkProps } from "next/link";
 import Image from "next/image";
+
+
+type HoveredLinkProps = LinkProps &
+  AnchorHTMLAttributes<HTMLAnchorElement> & {
+    children: ReactNode;
+  };
+
 
 const transition = {
   type: "spring",
@@ -109,7 +116,7 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({ children, ...rest }: HoveredLinkProps) => {
   return (
     <Link
       {...rest}

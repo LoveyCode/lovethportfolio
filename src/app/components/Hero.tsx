@@ -49,7 +49,7 @@ const Hero = () => {
           />
 
           <p className="text-center text-white-100 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I'm Loveth — a passionate React.js/Next.js developer based in
+            Hi, I&apos;m Loveth, a passionate fullstack React.js/Next.js developer based in
             Nigeria with a background in Computer Science from Nnamdi Azikiwe
             University. I specialize in building dynamic and responsive web
             applications, and I also have experience in programming.

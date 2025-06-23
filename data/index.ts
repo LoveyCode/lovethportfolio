@@ -33,7 +33,7 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "text-white justify-center",
-      img: "/b6.jpeg",
+      img: "",
       spareImg: "",
     },
     {
@@ -43,18 +43,18 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "text-white justify-start",
-      img: "/grid.svg",
+      img: "/robot.jpeg",
       spareImg: "/b4.svg",
     },
   
     {
       id: 5,
       title: "I enjoy building software that creates meaningful experiences and real impact.",
-      description: "The Inside Scoop",
+      description: "",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: " text-white justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
+      img: "/grid.jpeg",
       spareImg: "/grid.jpeg",
     },
     {
@@ -77,7 +77,7 @@ export const navItems = [
       title: "MedIntel: Robust patient appointment system Integrated in Regal Care Hospital website",
       des: "A comprehensive hospital management system for patient registration, appointments, staff coordination, medical records, and seamless admin control",
       img: "/p1.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "shadcn.png", "/fm.svg", "react.svg"],
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/shadcn.png", "/fm.svg", "react.svg"],
       link: "https://regal-care-hospital.vercel.app",
       href: "https://regal-care-hospital.vercel.app"
     },
@@ -86,7 +86,7 @@ export const navItems = [
       title: "Zanga - Ecommerce Website",
       des: "Zanga is a modern ecommerce platform designed for seamless shopping experiences, featuring intuitive navigation, secure checkout, and responsive design.",
       img: "/p2.png",
-      iconLists: ["react.svg", "Nodejs.png", "/fm.svg"],
+      iconLists: ["/react.svg", "/Nodejs.png", "/fm.svg"],
       link: "/https://zanga.app/",
       href: "/https://zanga.app/"
     },
@@ -136,6 +136,14 @@ export const navItems = [
       title: "A student",
     },
   ];
+export const techStacks = [
+  { name: 'React.js', src: '/react.svg' },
+  { name: 'Next.js', src: '/next.svg' },
+  { name: 'Tailwind CSS', src: '/tail.svg' },
+  { name: 'TypeScript', src: '/ts.svg' },
+  { name: 'Framer Motion', src: '/fm.svg' },
+  { name: 'Node.js', src: '/Nodejs.png' },
+]
   
   export const companies = [
     {

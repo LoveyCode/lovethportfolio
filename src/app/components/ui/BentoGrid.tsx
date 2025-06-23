@@ -9,6 +9,7 @@ import animationData from "../../../../data/confetti.json";
 import MagicButton from "./MagicButton";
 
 import { IoCopyOutline } from "react-icons/io5";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -50,8 +51,6 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
 
@@ -97,14 +96,14 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
+          className={`absolute object-cover ${id === 5 && "h-full w-full opacity-80"
             } `}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
-              //   width={220}
+              fill
               className="object-cover object-center w-full h-full"
             />
           )}
@@ -138,7 +137,9 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe /> }
 
           {/* Tech stack list div */}
-         {id === 3 }
+         <div className={cn("base-class", id === 3 && "text-black")}>  </div>
+  ...
+         
           {id === 6 && (
             <div className="mt-5 relative">
               {/* button border magic from tailwind css buttons  */}
