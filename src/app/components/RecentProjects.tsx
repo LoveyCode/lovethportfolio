@@ -17,7 +17,7 @@ const RecentProjects = () => {
         {projects.map((item) => (
           <div
             onClick={() => window.open(item.href, "_blank")}
-            className="cursor-pointer md:py-10 sm:h-[41rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className="cursor-pointer md:mt-4 sm:h-[41rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
             key={item.id}
           >
             <PinContainer title={item.link} href={item.href}>
@@ -41,7 +41,7 @@ const RecentProjects = () => {
                 />
               </div>
 
-              <div className="py-10">
+              
               <h1
                 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1"
                 style={{
@@ -60,7 +60,7 @@ const RecentProjects = () => {
               >
                 {item.des}
               </p>
-              </div>
+              
 
               <div className="flex items-center justify-between mt-7 mb-3">
                 <div className="flex items-center">
