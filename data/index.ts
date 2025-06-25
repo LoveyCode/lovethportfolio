@@ -75,7 +75,7 @@ export const navItems = [
     {
       id: 1,
       title: "MedIntel: Robust patient appointment system Integrated in Regal Care Hospital website",
-      des: "A comprehensive hospital management system for patient registration, appointments, staff coordination, medical records, and seamless admin control",
+      des: "(Deployed) A comprehensive hospital management system for patient registration, appointments, staff coordination, medical records, and seamless admin control",
       img: "/p1.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/shadcn.png", "/fm.svg", "react.svg"],
       link: "https://regal-care-hospital.vercel.app",
@@ -84,7 +84,7 @@ export const navItems = [
     {
       id: 2,
       title: "Zanga - Ecommerce Website",
-      des: "Zanga is a modern ecommerce platform designed for seamless shopping experiences, featuring intuitive navigation, secure checkout, and responsive design.",
+      des: "(Not Deployed but available on github) Zanga is a modern ecommerce platform designed for seamless shopping experiences, featuring intuitive navigation, secure checkout, and responsive design.",
       img: "/p2.png",
       iconLists: ["/react.svg", "/Nodejs.png", "/fm.svg"],
       link: "/https://zanga.app/",
