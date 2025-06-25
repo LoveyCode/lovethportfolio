@@ -86,7 +86,7 @@ html {
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center text-violet;
+    @apply font-bold text-4xl md:text-5xl text-center text-purple;
   }
 
   .black-gradient {

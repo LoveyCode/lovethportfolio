@@ -11,7 +11,7 @@ const Stack = () => {
   return (
     <div className="py-20 rounded-2xl shadow-md">
       <h1 className="heading pb-20">
-        My tech <span className="text-purple">stack</span>
+     My tech stack
       </h1>
 
       <div className="grid grid-cols-3 sm:grid-cols-6 gap-8 items-center">

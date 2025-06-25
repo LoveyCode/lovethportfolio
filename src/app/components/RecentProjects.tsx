@@ -10,15 +10,14 @@ const RecentProjects = () => {
   return (
     <div className="py-20" id="projects">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        A small selection of recent projects
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
         {projects.map((item) => (
           <div
-            onClick={() => window.open(item.href, "_blank")}
-            className="cursor-pointer md:mt-4 sm:h-[41rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
-            key={item.id}
+              onClick={() => window.open(item.href, "_blank")}
+  className="cursor-pointer mt-10 md:mt-0 sm:h-[41rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+  key={item.id}
           >
             <PinContainer title={item.link} href={item.href}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] sm:h-[40vh] h-[30vh] overflow-hidden lg:h-[30vh] mb-10">
