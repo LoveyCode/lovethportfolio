@@ -41,6 +41,7 @@ const RecentProjects = () => {
                 />
               </div>
 
+              <div className="py-10">
               <h1
                 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1"
                 style={{
@@ -49,7 +50,7 @@ const RecentProjects = () => {
               >
                 {item.title}
               </h1>
-
+               
               <p
                 className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
                 style={{
@@ -59,6 +60,7 @@ const RecentProjects = () => {
               >
                 {item.des}
               </p>
+              </div>
 
               <div className="flex items-center justify-between mt-7 mb-3">
                 <div className="flex items-center">

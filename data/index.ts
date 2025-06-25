@@ -112,9 +112,9 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Watching Loveth Azodo grow from a curious learner into a passionate programmer has been truly inspiring. At High Target School, we prioritize nurturing talent, and it's a joy to see how our environment helped spark a lasting interest in technology. I’m proud that our school played a role in shaping such a promising future in programming.",
-      name: "Mrs. Ebere Nwoji",
-      title: "Proprietress, High Target School",
+       "Loveth Azodo taught programming at our school and consistently exceeded expectations in both knowledge delivery and student engagement. Her ability to simplify complex programming concepts and tailor her teaching to different learning styles helped many of our students develop real coding skills and confidence. She brought creativity, professionalism, and a deep passion for tech education to our team. Loveth played a key role in preparing our students for the digital world, and we highly commend her impact and dedication.",
+      name: "Mrs. Seun Adedeji",
+      title: "Manager, Bright Stars ",
     },
     {
       quote:
@@ -124,9 +124,9 @@ export const navItems = [
     },
     {
       quote:
-        "Having Loveth Azodo manage our website has brought a new level of professionalism to Optimum Times Online. She’s reliable, creative, and always quick to respond when updates are needed. Her attention to detail and understanding of our content goals have helped us maintain a clean, user-friendly platform for our readers. We're proud to have her on board..",
-      name: "Clement Nwoji",
-      title: "Publisher, Optimum Times Online",
+        "Having Loveth Azodo manage our website has brought a new level of professionalism to my business. She’s reliable, creative, and always quick to respond when updates are needed. Her attention to detail and understanding of our content goals have helped us maintain a clean, user-friendly platform for our readers. We're proud to have her on board..",
+      name: "Ikenna Nwaibu",
+      title: "Entrepreneur",
     },
 
     {
@@ -134,6 +134,10 @@ export const navItems = [
         "Learning programming under Miss Loveth Azodo was a turning point for me. She made complex topics easy to understand and always took time to guide me patiently. Her teaching sparked my interest in tech, and I’m truly grateful for the foundation she helped me build. She’s more than a teacher—she’s a mentor I’ll always look up to.",
       name: " Ebube Nwabuike",
       title: "A student",
+    },
+    {quote: "As a businessman in Alaba International Market, I needed a website that could handle a lot—product listings, customer inquiries, real-time updates, and a clean, professional look. Loveth Azodo delivered far beyond my expectations. She listened carefully to what I wanted, gave me helpful advice, and built a website that not only looks great but works perfectly for my kind of business. Her knowledge of web development is solid, and she handled everything with speed and professionalism. I strongly recommend her to anyone who wants a serious, reliable developer.",
+    name: "Ekene Chukwudi",
+    title: "As a businessman in Alaba International Market"
     },
   ];
 export const techStacks = [
