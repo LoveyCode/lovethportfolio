@@ -1,9 +1,10 @@
 "use client"
 import { useState } from "react";
 import { cn } from "../../../../lib/utils";
-    import { BackgroundGradientAnimation } from "./GradientBg";
+import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
-import Lottie from "react-lottie";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 import animationData from "../../../../data/confetti.json";
 import MagicButton from "./MagicButton";
@@ -54,14 +55,15 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+
+  
+<Lottie
+  animationData={animationData}
+  loop={copied}
+  autoplay={copied}
+  style={{ width: 400, height: 200 }}
+/>
+
 
   const handleCopy = () => {
     const text = "lovazodo@gmail.com";
@@ -152,7 +154,7 @@ export const BentoGridItem = ({
                   }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+               <Lottie animationData={animationData} loop={copied} autoplay={copied}  height={200} width={400} />
               </div>
 
               <MagicButton

@@ -1,14 +1,17 @@
-"use client"
+
 import { navItems } from "../../data";
-import Hero from "./components/Hero";
-import { FloatingNav } from "./components/ui/FloatingNav";
-import Grid from "./components/Grid";
-import RecentProjects from "./components/RecentProjects";
+import Approach from "./components/Approach";
 import Clients from "./components/Clients";
 import Experience from "./components/Experience";
-import Approach from "./components/Approach";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import dynamic from "next/dynamic";
+const Grid = dynamic(() => import("./components/Grid"), { ssr: false });
 import Stack from "./components/Stack";
+import { FloatingNav } from "./components/ui/FloatingNav";
+import RecentProjects from "./components/RecentProjects";
+
+
 
 export default function Home() {
   return (
@@ -19,12 +22,13 @@ export default function Home() {
         <Hero />
         <Grid />
         <Stack />
-        <RecentProjects />
-        <Clients />
+          <RecentProjects /> 
+        <Clients /> 
         <Experience />
         <Approach />
         <Footer />
       </div>
     </main>
   );
-}
+} 
+
