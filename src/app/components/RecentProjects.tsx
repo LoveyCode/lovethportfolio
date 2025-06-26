@@ -16,7 +16,7 @@ const RecentProjects = () => {
         {projects.map((item) => (
           <div
               onClick={() => window.open(item.href, "_blank")}
-  className="cursor-pointer mt-10 md:mt-0 sm:h-[41rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+  className="cursor-pointer mt-20 md:mt-0 sm:h-[41rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
   key={item.id}
           >
             <PinContainer title={item.link} href={item.href}>
