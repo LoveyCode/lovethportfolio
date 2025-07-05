@@ -84,11 +84,11 @@ export const navItems = [
     {
       id: 2,
       title: "Zanga - Ecommerce Website",
-      des: "(Not Deployed but available on github) Zanga is a modern ecommerce platform designed for seamless shopping experiences, featuring intuitive navigation, secure checkout, and responsive design.",
+      des: "(Deployed) Zanga is a modern ecommerce platform designed for seamless shopping experiences, featuring intuitive navigation, secure checkout, and responsive design. Includes a protected admin panel accessible only with a valid password.",
       img: "/p2.png",
       iconLists: ["/react.svg", "/Nodejs.png", "/fm.svg"],
-      link: "/https://zanga.app/",
-      href: "/https://zanga.app/"
+      link: "/https://zangaa.vercel.app/",
+      href: "https://zangaa.vercel.app/"
     },
     {
       id: 3,
