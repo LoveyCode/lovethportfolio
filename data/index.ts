@@ -12,7 +12,7 @@ export const navItems = [
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
-      titleClassName: "justify-end",
+      titleClassName: " text-black justify-end",
       img: "/b1.jpeg",
       spareImg: "",
     },
@@ -84,7 +84,7 @@ export const navItems = [
     {
       id: 2,
       title: "Zanga - Ecommerce Website",
-      des: "(Deployed) Zanga is a modern ecommerce platform designed for seamless shopping experiences, featuring intuitive navigation, secure checkout, and responsive design. Includes a protected admin panel accessible only with a valid password.",
+      des: "(Deployed) Zanga is a modern ecommerce platform designed for seamless shopping experiences with secure checkout and responsive design. Includes a protected admin panel.",
       img: "/p2.png",
       iconLists: ["/react.svg", "/Nodejs.png", "/fm.svg"],
       link: "/https://zangaa.vercel.app/",
@@ -93,7 +93,7 @@ export const navItems = [
     {
       id: 3,
       title: "Headmaster - I am currently building a school management system",
-      des: "Headmaster is a smart, all-in-one school management system designed to simplify administration, track performance, and enhance communication between teachers, students, and parents.",
+      des: "A smart, all-in-one school management system for handling student enrollment, performance tracking, teacher-parent communication, class scheduling, and seamless administrative coordination.",
       img: "/p3.jpeg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg", "react-native.svg"],
       link: "/headmaster.com",
@@ -101,7 +101,7 @@ export const navItems = [
     {
       id: 4,
       title: "Mobo - Currently building a taxi mobile app",
-      des: "Mobo is a reliable taxi app offering fast, safe, and convenient rides at your fingertips anytime, anywhere.",
+      des: "A reliable and user-friendly taxi booking platform for quick pickups, real-time tracking, secure payments, driver-passenger coordination, and smooth ride experiences anytime, anywhere.",
       img: "/p4.jpeg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "/mobo.com",
@@ -118,26 +118,26 @@ export const navItems = [
     },
     {
       quote:
-        "We needed a professional website designer who could clearly represent what we do, and Loveth Azodo delivered exactly that. We're truly glad to have had her on our team and we wish her even greater heights ahead.",
+        "We needed a professional full-stack developer who could clearly represent what we do, and Loveth Azodo delivered exactly that. We're truly glad to have had her on our team and we wish her even greater heights ahead.",
       name: "Uchenna Benson",
       title: "Manager, Patent Global Services",
     },
     {
       quote:
-        "Having Loveth Azodo manage our website has brought a new level of professionalism to my business. She’s reliable, creative, and always quick to respond when updates are needed. Her attention to detail and understanding of our content goals have helped us maintain a clean, user-friendly platform for our readers. We're proud to have her on board..",
-      name: "Ikenna Nwaibu",
-      title: "Entrepreneur",
+        "Loveth was a great colleague at Adyen. She is skilled across the full stack, quick to solve problems, and always reliable. A strong team player who brings both technical depth and a collaborative spirit.",
+      name: "Bhavesh M",
+      title: "Software Developer, Adyen",
     },
 
     {
       quote:
-        "Learning programming under Miss Loveth Azodo was a turning point for me. She made complex topics easy to understand and always took time to guide me patiently. Her teaching sparked my interest in tech, and I’m truly grateful for the foundation she helped me build. She’s more than a teacher—she’s a mentor I’ll always look up to.",
+        "Learning programming under Mrs Loveth was a turning point for me. She made complex topics easy to understand and always took time to guide me patiently. Her teaching sparked my interest in tech, and I’m truly grateful for the foundation she helped me build. She’s more than a teacher—she’s a mentor I’ll always look up to.",
       name: " Ebube Nwabuike",
       title: "A student",
     },
-    {quote: "As a businessman in Alaba International Market, I needed a website that could handle a lot—product listings, customer inquiries, real-time updates, and a clean, professional look. Loveth Azodo delivered far beyond my expectations. She listened carefully to what I wanted, gave me helpful advice, and built a website that not only looks great but works perfectly for my kind of business. Her knowledge of web development is solid, and she handled everything with speed and professionalism. I strongly recommend her to anyone who wants a serious, reliable developer.",
+    {quote: "As a businessman in Alaba International Market, I needed a website developed with new Technologies that could handle a lot—product listings, customer inquiries, real-time updates, and a clean, professional look. Loveth delivered far beyond my expectations. She listened carefully to what I wanted, gave me helpful advice, and built a website that not only looks great but works perfectly for my kind of business. Her knowledge of web development is solid, and she handled everything with speed and professionalism. I strongly recommend her to anyone who wants a serious, reliable developer.",
     name: "Ekene Chukwudi",
-    title: "As a businessman in Alaba International Market"
+    title: "Business owner"
     },
   ];
 export const techStacks = [
@@ -185,23 +185,22 @@ export const techStacks = [
   export const workExperience = [
     {
       id: 1,
-      title: "Website manager and designer",
-      desc: "Assisted in the development of a web-based platform using wordpress, enhancing interactivity.",
+      title: "Full-stack Developer,",
+      desc: "Built and maintained full-stack applications using Node.js, Express, React, and JavaScript. Led both backend logic and frontend UI development, conducted code reviews, optimized performance, and ensured thorough documentation and maintainability.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - Patent Global service",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Softcom LTD, Intern",
+      desc: "Collaborated on scalable web application architecture, used Git for version control, implemented RESTful APIs with Node.js/Express, designed efficient database schemas, and troubleshot issues pre-deployment.",
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Assisted in developing a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Several Freelance App Dev Project",
+      desc: "Assisted in developing a mobile app and web app for a clients, from initial concept to deployment on app stores.",
+      className: "md:col-span-2", 
       thumbnail: "/exp3.svg",
     },
     {

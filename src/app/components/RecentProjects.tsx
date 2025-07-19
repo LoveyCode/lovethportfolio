@@ -40,7 +40,6 @@ const RecentProjects = () => {
                 />
               </div>
 
-              
               <h1
                 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1"
                 style={{
@@ -51,7 +50,7 @@ const RecentProjects = () => {
               </h1>
                
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                className="lg:text-xl lg:font-normal font-light text-sm "
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",

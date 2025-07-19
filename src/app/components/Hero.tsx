@@ -50,11 +50,17 @@ const Hero = () => {
           />
 
           <p className="text-center text-white-100 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Loveth, a passionate fullstack React.js/Next.js developer based in
-            Nigeria with a background in Computer Science from Nnamdi Azikiwe
-            University. I specialize in building dynamic and responsive web
-            applications, and I also have experience in programming.
-          </p>
+            Hi, I&apos;m Loveth, a passionate full stack Developer with over 5 years of 
+            experience in front-end and back-end programming. Specialized in JavaScript, TypeScript,
+            React.js, Node.js, and Next.js, with proficiency in various animation 
+            libraries. Demonstrated ability to design, develop, and implement software 
+            applications, enhancing system functionality through innovative coding 
+            solutions. Strong problem-solving skills and adaptability to new technologies,
+             with a proven track record of effective teamwork.
+</p>
+
+
+          
 
           <a href="#about">
             <MagicButton
